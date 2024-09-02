@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Optimization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Optimization</h1>
+
+        <div class="input-section">
+            <label for="stockSymbols">Stock Symbols (comma separated):</label>
+            <input type="text" id="stockSymbols" placeholder="AAPL, MSFT, SQ">
+            <button onclick="loadData()">Load Data</button>
+        </div>
+
+        <div id="dataPreview" class="output-section"></div>
+        <div id="metrics" class="output-section"></div>
+        <div id="optimizedWeights" class="output-section"></div>
+
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
